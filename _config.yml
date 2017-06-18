@@ -40,7 +40,9 @@ paginate_path: /page:num/
 gems:
   - jekyll-feed
   - jekyll-paginate
-
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 # Custom variables
 version: "1.0.1"
