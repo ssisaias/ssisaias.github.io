@@ -23,14 +23,38 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://isaiassilva.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: #jekyllrb
 github_username:  ssisaias
+author:
+  name: "Isaias Silva"
+  email: "luiz.isaias95@gmail.com"
+  url: "http://isaiassilva.com"
 
 # Build settings
+baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
-#theme: custom
+source: .
+destination: ./_site
+permalink: /:year/:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+#theme: emerald
 gems:
   - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+  - jekyll-paginate
+
 #permalink: /:categories/:year/:month/:day/:title
-permalink: /blog/:year/:title
+permalink: /blog
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
