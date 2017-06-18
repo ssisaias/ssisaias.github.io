@@ -1,9 +1,16 @@
 ---
 layout: default
 ---
+{% include minutes-to-read.html %}
 <article id="post-page">
 	<h2>{{ page.title }}</h2>		
-	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }} - {{minutesText}} 
+		<br>
+		{% if page.author %}
+			Por {{ page.author }}
+		{% endif %}
+	</time>
+	
 	<div class="content">
 
 		{{ content }}

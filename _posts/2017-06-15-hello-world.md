@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Isaias
 title:  "Welcome to Jekyll!"
 date:   2017-06-15 17:11:04 -0300
 categories: blablabla
