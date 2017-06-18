@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Isaias Silva
-#email: luiz.isaias95@gmail.com
+email: luiz.isaias95@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://isaiassilva.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: #jekyllrb
 github_username:  ssisaias
@@ -29,7 +29,6 @@ author:
   url: "http://isaiassilva.com"
 
 # Build settings
-baseurl: "" # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
@@ -44,7 +43,7 @@ gems:
 
 
 # Custom variables
-version: "1.0.0"
+version: "1.0.1"
 
 
 # Options
