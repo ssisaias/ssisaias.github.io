@@ -11,15 +11,19 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <hr>
+        {% assign date_format = site.minima.date_format | default: " %-d / %M /  %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url}}#disqus_thread">{{ post.title | escape }}</a>
-        </h2>
+        <h3>
+          <a class="post-link" href="{{post.url}}">{{ post.title | escape }}</a> (( <a class="post-link" href="{{post.url}}#disqus_thread">{{ post.title | escape }}</a>  
+        <a href="{{post.url}}/#disqus_thread"></a> ))
+        </h3>
+        
+        <hr>
       </li>
     {% endfor %}
   </ul>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <p class="rss-subscribe">Feeds <a href="{{ "/feed.xml" | relative_url }}"> RSS</a></p>
 
 </div>
